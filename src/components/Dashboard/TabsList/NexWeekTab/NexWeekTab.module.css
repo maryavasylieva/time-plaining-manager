@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+}
+
+.section {
+  display: block;
+  margin: 0 auto;
+  width: inherit;
+}
+
+.titleButton {
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  display: block;
+  min-width: 300px;
+  border: none;
+  text-align: left;
+  color: #869096;
+  outline: none;
+}
+
+.titleButton::after {
+  padding-left: 10px;
+  transform: rotate(-180deg);
+  transform-origin: center center;
+  position: relative;
+  background: url(../../../../assets/icons/arrow_drop_down-24px.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+}
+
+.dropDoun::after {
+  transform: rotate(0deg);
+}
+
+@media screen and (max-width: 767px) {
+  .titleButton {
+    position: sticky;
+    line-height: 20px;
+    top: 0;
+    background-color: #f5f7fa;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 640px;
+  }
+
+  .section {
+    margin-bottom: 26px;
+  }
+
+  .titleButton {
+    min-width: 640px;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .titleButton::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    border: 1px solid #e0e5eb;
+  }
+
+  .titleNext::before {
+    left: 105px;
+  }
+
+  .titleAfter::before {
+    left: 107px;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .container {
+    width: 980px;
+  }
+
+  .containerOpen {
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .section {
+    margin-bottom: 26px;
+  }
+
+  .titleButton {
+    width: 100%;
+  }
+}

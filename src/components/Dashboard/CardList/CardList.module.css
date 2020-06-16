@@ -1,0 +1,84 @@
+.cardList {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cardsTrsn {
+  /* transition: all 0.4s; */
+  overflow: hidden;
+}
+
+.cardItem {
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  width: 300px;
+  /* height: 200px;
+  background: gold;
+  border: 1px solid red; */
+}
+
+/*
+.cardItem:last-child {
+  margin-bottom: 0;
+} */
+
+@media screen and (min-width: 768px) {
+  .cardList {
+    min-width: 640px;
+    flex-direction: row;
+  }
+
+  .cardItem:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .cardList {
+    min-width: 980px;
+    justify-content: flex-start;
+    /* height: 500px; */
+    /* overflow: scroll; */
+    overflow: hidden;
+    position: relative;
+  }
+
+  .cardItem {
+    margin-right: 4%;
+  }
+
+  .cardItem:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .cardItem:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+
+  .cardListOpen {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cardItemOpen {
+    margin: 0;
+  }
+
+  .cardItemOpen:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+    justify-content: space-between;
+  }
+}

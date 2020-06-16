@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.burgerMenu {
+  padding-top: 28px;
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.navLink {
+  text-decoration: none;
+}
+
+.selected {
+  background-color: #fff;
+}
+
+.burgerList {
+  width: 300px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.burgerItems {
+  list-style: none;
+  border: 1px solid #cdd0d9;
+}
+
+.burgerItems:not(:last-child) {
+  border-bottom: none;
+}
+
+.burgerButton {
+  outline: none;
+  background-color: #f6f7fb;
+  text-align: left;
+  display: block;
+  width: 100%;
+  position: relative;
+  vertical-align: middle;
+  line-height: 40px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  color: gray;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.burgerButton:active {
+  background-color: #fff;
+}
+
+.burgerButton::before {
+  content: ' ';
+  vertical-align: middle;
+  padding-left: 28px;
+  padding-right: 8px;
+  display: inline-block;
+  background: url(../../../assets/icons/icons_menu/icon_dashboard.png);
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.next::before {
+  background: url(../../../assets/icons/icons_menu/icon_next.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.burned::before {
+  background: url(../../../assets/icons/icons_menu/icon_burned_out.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.done::before {
+  background: url(../../../assets/icons/icons_menu/icon_done.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.statistics::before {
+  background: url(../../../assets/icons/icons_menu/icon_statistics.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.wrapper {
+  display: block;
+  margin: 0 auto;
+  width: inherit;
+}
+
+.logButton {
+  display: block;
+  margin: 0 auto;
+  color: gray;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+.logButton::after {
+  content: ' ';
+  width: 50px;
+  margin: 0 auto;
+  outline: none;
+  display: block;
+  border: 1px solid #dce0e3;
+}
+
+.logButton:active {
+  outline: 1px solid gray;
+}
+
+@media screen and (min-width: 768px) {
+  .burgerMenu {
+    display: none;
+  }
+}

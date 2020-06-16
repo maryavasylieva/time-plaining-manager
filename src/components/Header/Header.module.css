@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  width: 100%;
+  height: 52px;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  justify-content: space-between;
+  box-shadow: 2px 3.464px 8px 0px rgba(29, 29, 27, 0.1);
+}
+
+.li {
+  padding: 0;
+  list-style: none;
+}
+
+.donutDashboard {
+  border: 0;
+  padding: 0;
+  width: 52px;
+  height: 100%;
+  background-image: url('../../assets/icons/donut_small-24px.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #cdd0d9;
+  cursor: pointer;
+  outline: none;
+}
+
+.donutStatistics {
+  composes: donutDashboard;
+  background-image: url('../../assets/icons/dashboard-24px.svg');
+}
+
+.logo {
+  margin-left: 60px;
+  width: 120px;
+  height: auto;
+}
+
+.logOut {
+  width: 112px;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  background-color: #fff;
+  font-size: 12px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  color: rgb(66, 66, 66);
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.burgerLi {
+  composes: li;
+  width: 52px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.button {
+  composes: logOut;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/icons/close-24px.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.checked {
+  composes: button;
+  background-image: url('../../assets/icons/menu-button-of-three-horizontal-lines.svg');
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    position: relative;
+    justify-content: center;
+  }
+
+  .logo {
+    margin: 0;
+  }
+}

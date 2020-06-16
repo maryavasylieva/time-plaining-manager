@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.link {
+  display: block;
+  width: 140px;
+  text-decoration: none;
+  color: gray;
+  border: 1px solid #cdd0d9;
+  background-color: #f5f7fa;
+}
+
+.title {
+  position: relative;
+  font-size: 13px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  vertical-align: middle;
+  line-height: 40px;
+}
+
+.title::before {
+  vertical-align: middle;
+  content: ' ';
+  padding-left: 14px;
+  padding-right: 14px;
+  display: inline-block;
+  background: url(../../../../assets/icons/icons_menu/icon_dashboard.png);
+  max-width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-size: cover; */
+}
+
+.next::before {
+  background: url(../../../../assets/icons/icons_menu/icon_next.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-size: contain; */
+}
+
+.burned::before {
+  background: url(../../../../assets/icons/icons_menu/icon_burned_out.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-size: contain; */
+}
+
+.done::before {
+  background: url(../../../../assets/icons/icons_menu/icon_done.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-size: contain; */
+}
+
+.selected {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .block {
+    display: none;
+  }
+}

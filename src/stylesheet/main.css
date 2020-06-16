@@ -1,0 +1,20 @@
+@import './libs/normalize.css';
+@import './fonts.css';
+@import './vars.css';
+@import './taskPopUp/date-picker.css';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

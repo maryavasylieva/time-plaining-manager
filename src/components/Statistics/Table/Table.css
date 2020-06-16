@@ -1,0 +1,119 @@
+.ReactTable {
+  position: relative;
+  font-weight: 500;
+  /* display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; */
+  /* width: 100%; */
+  /* min-width: auto; */
+  /* right: 0; */
+  margin-bottom: 16px;
+}
+
+.rt-tr {
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.rt-tr-group {
+  border-bottom: 1px solid #e0e5eb;
+  padding-top: 22px;
+  padding-bottom: 8px;
+  width: 100%;
+}
+
+.rt-thead.-header {
+  border-bottom: 1px solid #e0e5eb;
+  padding-bottom: 6px;
+}
+
+.rt-resizable-header-content {
+  font-weight: 700;
+}
+
+.rt-th:nth-child(2) {
+  text-align: right;
+  font-weight: bold;
+}
+
+.rt-th:nth-child(3) {
+  text-align: right;
+}
+.rt-td {
+  color: #869096;
+  font-weight: 500;
+}
+
+.rt-td:nth-child(1) {
+  padding-left: 25px;
+  text-align: left;
+  /* width: 151px; */
+}
+
+.rt-td:nth-child(2) {
+  text-align: right;
+  /* width: 30px; */
+}
+
+.rt-td:nth-child(3) {
+  text-align: right;
+}
+
+.rt-tr-group:nth-child(1)::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: #fef9de;
+}
+
+.rt-tr-group:nth-child(2)::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: #c2c9de;
+}
+
+.rt-tr-group:nth-child(3)::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: #d3dcd6;
+}
+
+.rt-tr-group:nth-child(4)::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: #d5ebff;
+}
+
+.rt-tr-group:nth-child(5)::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: #cdd0d9;
+}
+
+.-loading {
+  display: none;
+}
+
+@media only screen and (min-width: 470px) {
+  .rt-th:nth-child(2) {
+    text-align: center;
+  }
+
+  .rt-td:nth-child(2) {
+    text-align: center;
+  }
+}

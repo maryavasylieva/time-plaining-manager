@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: block;
+  padding: 0;
+  padding-top: 20px;
+  margin: 0 auto;
+  justify-content: space-between;
+  min-width: 320x;
+}
+
+.content {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-top: 72px;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .container {
+    padding-top: 96px;
+  }
+}

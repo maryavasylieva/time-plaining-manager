@@ -1,0 +1,25 @@
+.link {
+  text-align: right;
+}
+
+.backButton {
+  width: 150px;
+  height: 40px;
+  background-color: #ff6b08;
+  font-size: 12px;
+  border: 0;
+  letter-spacing: 0px;
+  line-height: 21px;
+  color: #ffffff;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.backButton:hover {
+  width: 150px;
+  height: 40px;
+  background-color: black;
+}

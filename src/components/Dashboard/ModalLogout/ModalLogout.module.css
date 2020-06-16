@@ -1,0 +1,88 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 14px;
+  max-width: 280px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.question {
+  margin-bottom: 40px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  color: #869096;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button:active {
+  color: #008000;
+}
+
+.noButton {
+  display: block;
+  border: none;
+  background-color: transparent;
+  color: #869096;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.noButton:active {
+  color: #ff0000;
+}
+
+@media screen and (min-width: 767px) {
+  .modal {
+    max-width: 480px;
+  }
+  .buttons {
+    width: 40%;
+  }
+  .button:hover {
+    color: #008000;
+  }
+  .button:focus {
+    color: #008000;
+  }
+  .noButton:hover {
+    color: #ff0000;
+  }
+  .noButton:focus {
+    color: #ff0000;
+  }
+}

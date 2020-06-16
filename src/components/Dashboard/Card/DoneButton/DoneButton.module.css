@@ -1,0 +1,45 @@
+.DoneBtn {
+  padding: 6px;
+  border: 0;
+  border-radius: 50%;
+  margin-left: 10px;
+  background-color: #f5f7fa;
+  fill: #cdd0d9;
+}
+
+.DoneBtn:hover {
+  background-color: #e0e2e8;
+  fill: white;
+  cursor: pointer;
+}
+
+.DoneBtnBurn {
+  padding: 6px;
+  border: 0;
+  border-radius: 50%;
+  margin-left: 10px;
+  fill: #f25137;
+  background-color: #f5e6e6;
+}
+
+.DoneBtnBurn:hover {
+  fill: #f5e6e6;
+  background-color: #f25137;
+}
+
+.DoneBtn:focus {
+  outline: 0;
+}
+
+.loaderWrapper {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  right: -12px;
+  top: -158px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cdd0d9;
+  opacity: 0.8;
+}
